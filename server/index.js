@@ -18,7 +18,7 @@ app.use('/api/v1/dalle', dalleRoutes);
 
 app.use((req, res, next) => {
   console.log('Request received:', req.method, req.url);
-  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Origin', 'https://img-gen-a83ff.web.app');
   next();
 });
 
