@@ -1,6 +1,17 @@
 {
   "hosting": {
     "public": "dist",
+    "headers": [
+      {
+        "source": "/api/v1/dalle",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "https://img-gen-z3zr.onrender.com"
+          }
+        ]
+      }
+    ],
     "ignore": [
       "firebase.json",
       "**/.*",
